@@ -1,0 +1,2 @@
+# ConstructorTester
+Tests constructor.
