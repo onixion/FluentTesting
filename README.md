@@ -5,7 +5,7 @@
 
 A simple fluent library for testing.
 
-[NuGet package](https://www.nuget.org/packages/AlinSpace.FluentResults/)
+[NuGet package](https://www.nuget.org/packages/AlinSpace.FluentTesting/)
 
 ## Why?
 
