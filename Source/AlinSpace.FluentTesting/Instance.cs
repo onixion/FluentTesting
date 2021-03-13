@@ -8,7 +8,7 @@ namespace AlinSpace.FluentTesting
     {
         //public static T Of<T>()
         //{
-            
+          
         //}
     }
 }

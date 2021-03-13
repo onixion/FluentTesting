@@ -16,14 +16,7 @@ namespace AlinSpace.FluentTesting
         /// <returns>Constructor assertion.</returns>
         public static ConstructorAssertion<T> ThrowsArgumentNullException<T>(ConstructorAssertion<T> constructorAssertion)
         {
-            var constructors = typeof(T).GetConstructors();
-
-            foreach(var constructor in constructors)
-            {
-
-            }
-
-            return constructorAssertion;
+            throw new NotImplementedException();
         }
     }
 }
