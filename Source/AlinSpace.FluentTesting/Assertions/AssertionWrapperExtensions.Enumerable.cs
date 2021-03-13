@@ -16,7 +16,11 @@ namespace AlinSpace.FluentTesting
         {
             if (assertion.Sut.Any(v => predicate?.Invoke(v) ?? true))
             {
-                throw new AssertionException();
+                throw new AssertionException(
+                    extensionName: nameof(BeEmpty),
+                    expectedText: $"Expected the enumerable to be empty.",
+                    evaluatedText: $"The enumerable was not empty.",
+                    message: message);
             }
 
             return assertion;
@@ -29,7 +33,11 @@ namespace AlinSpace.FluentTesting
         {
             if (!assertion.Sut.Any(v => predicate?.Invoke(v) ?? true))
             {
-                throw new AssertionException();
+                throw new AssertionException(
+                    extensionName: nameof(BeEmpty),
+                    expectedText: $"Expected the enumerable to be not empty.",
+                    evaluatedText: $"The enumerable was empty.",
+                    message: message);
             }
 
             return assertion;

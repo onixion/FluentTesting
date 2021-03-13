@@ -68,7 +68,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(BeNotSame),
                     expectedText: $"Expected the value '{assertion.Sut}' not to be same to '{value}'.",
-                    evaluatedText: $"The values are the same.",
+                    evaluatedText: $"The values were the same.",
                     message: message);
             }
 
@@ -85,7 +85,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(BeEqual),
                     expectedText: $"Expected the value '{assertion.Sut}' to be equal to '{value}'.",
-                    evaluatedText: $"The values are not equal.",
+                    evaluatedText: $"The values were not equal.",
                     message: message);
             }
 
@@ -102,7 +102,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(BeNotEqual),
                     expectedText: $"Expected the value '{assertion.Sut}' to be not equal to '{value}'.",
-                    evaluatedText: $"The values are equal.",
+                    evaluatedText: $"The values were equal.",
                     message: message);
             }
 
@@ -118,7 +118,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(BeDefault),
                     expectedText: $"Expected the value '{assertion.Sut}' to be the default value '{default(T)}'.",
-                    evaluatedText: $"The value is not the default value.",
+                    evaluatedText: $"The value was not the default value.",
                     message: message);
             }
 
@@ -134,7 +134,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(NotBeDefault),
                     expectedText: $"Expected the value '{assertion.Sut}' to be not the default value '{default(T)}'.",
-                    evaluatedText: $"The value is the default value.",
+                    evaluatedText: $"The value was the default value.",
                     message: message);
             }
 
@@ -150,7 +150,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(BeNull),
                     expectedText: $"Expected the value '{assertion.Sut}' to be not the default value '{default(T)}'.",
-                    evaluatedText: $"The value is the default value.",
+                    evaluatedText: $"The value was the default value.",
                     message: message);
             }
 
@@ -166,7 +166,7 @@ namespace AlinSpace.FluentTesting
                 throw new AssertionException(
                     extensionName: nameof(NotBeNull),
                     expectedText: $"Expected the value '{assertion.Sut}' to be not the default value '{default(T)}'.",
-                    evaluatedText: $"The value is the default value.",
+                    evaluatedText: $"The value was the default value.",
                     message: message);
             }
 
