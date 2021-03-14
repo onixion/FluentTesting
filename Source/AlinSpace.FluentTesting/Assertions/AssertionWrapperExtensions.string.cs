@@ -13,7 +13,7 @@
             if (!assertion.Sut.StartsWith(value))
             {
                 throw new AssertionException(
-                    extensionName: nameof(BeEmpty),
+                    extensionName: nameof(StartWith),
                     expectedText: $"Expected the string '{assertion.Sut}' to start with '{value}'.",
                     evaluatedText: $"The string '{assertion.Sut}' did not start with '{value}'.",
                     message: message);
@@ -30,7 +30,7 @@
             if (assertion.Sut.StartsWith(value))
             {
                 throw new AssertionException(
-                    extensionName: nameof(BeEmpty),
+                    extensionName: nameof(NotStartWith),
                     expectedText: $"Expected the string '{assertion.Sut}' to not start with '{value}'.",
                     evaluatedText: $"The string '{assertion.Sut}' did start with '{value}'.",
                     message: message);
@@ -47,7 +47,7 @@
             if (!assertion.Sut.Contains(value))
             {
                 throw new AssertionException(
-                    extensionName: nameof(BeEmpty),
+                    extensionName: nameof(Contain),
                     expectedText: $"Expected the string '{assertion.Sut}' to contain '{value}'.",
                     evaluatedText: $"The string '{assertion.Sut}' did not contain '{value}'.",
                     message: message);
@@ -64,7 +64,7 @@
             if (assertion.Sut.Contains(value))
             {
                 throw new AssertionException(
-                   extensionName: nameof(BeEmpty),
+                   extensionName: nameof(NotContain),
                    expectedText: $"Expected the string '{assertion.Sut}' to not contain '{value}'.",
                    evaluatedText: $"The string '{assertion.Sut}' did contain '{value}'.",
                    message: message);

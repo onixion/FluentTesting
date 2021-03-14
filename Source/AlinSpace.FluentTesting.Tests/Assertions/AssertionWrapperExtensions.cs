@@ -1,8 +1,8 @@
 ﻿using Xunit;
 
-namespace AlinSpace.FluentTesting.Tests.Assertions
+namespace AlinSpace.FluentTesting.Tests
 {
-    public class AssertionWrapperExtensions
+    public partial class AssertionWrapperExtensions
     {
         [Fact]
         public void Be_1()
